@@ -23,7 +23,7 @@ module Xdrgen::AST
           # discriminant_type has not been found we need to search for the value in namespace's enum constants.
           # It's a case where union discriminant is a standard type (like `int`):
           #
-          # enum StellarValueType
+          # enum DiamnetValueType
           # {
           #     STELLAR_VALUE_BASIC = 0,
           #     STELLAR_VALUE_SIGNED = 1

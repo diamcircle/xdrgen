@@ -840,7 +840,7 @@ EOS
             "io"
             "fmt"
 
-            "github.com/stellar/go-xdr/xdr3"
+            "github.com/diamcircle/go-xdr/xdr3"
           )
         EOS
         out.break

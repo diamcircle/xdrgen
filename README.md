@@ -1,7 +1,7 @@
 # Xdrgen
 
-[![Build Status](https://travis-ci.org/stellar/xdrgen.svg)](https://travis-ci.org/stellar/xdrgen)
-[![Code Climate](https://codeclimate.com/github/stellar/xdrgen/badges/gpa.svg)](https://codeclimate.com/github/stellar/xdrgen)
+[![Build Status](https://travis-ci.org/diamnet/xdrgen.svg)](https://travis-ci.org/diamnet/xdrgen)
+[![Code Climate](https://codeclimate.com/github/diamnet/xdrgen/badges/gpa.svg)](https://codeclimate.com/github/diamnet/xdrgen)
 
 `xdrgen` is a code generator that takes XDR IDL files (`.x` files) as specified
 in [RFC 4506](http://tools.ietf.org/html/rfc4506.html) and spits code out in
@@ -14,7 +14,7 @@ various languages.
 Xdrgen is a very early project.  Aside from the test fixtures in
 [spec/fixtures](spec/fixtures), the only .x files that have been thrown at it
 are the .x files used for the
-[stellar-core project](https://github.com/stellar/stellar-core).
+[diamnet-core project](https://github.com/diamcircle/diamnet-core).
 
 Xdrgen presently supports these output languages: ruby, javacript, java,
 golang, elixir and Python:

@@ -69,7 +69,7 @@ module Xdrgen
           /* jshint maxstatements:2147483647  */
           /* jshint esnext:true  */
 
-          import * as XDR from '@stellar/js-xdr';
+          import * as XDR from '@diamnet/js-xdr';
 
         EOS
         out.break
@@ -191,7 +191,7 @@ module Xdrgen
 
       def member_name(member)
         fixedName = name(member).camelize(:lower)
-        # render set() as set_() because set is reserved by stellar/js-xdr
+        # render set() as set_() because set is reserved by diamnet/js-xdr
         if fixedName == 'set'
           return 'set_'
         end

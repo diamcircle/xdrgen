@@ -43,7 +43,7 @@ module Xdrgen
       end
 
       def add_imports_for_definition(defn, imports)
-        imports.add("org.stellar.sdk.Base64Factory")
+        imports.add("org.diamnet.sdk.Base64Factory")
         imports.add("java.io.ByteArrayInputStream")
         imports.add("java.io.ByteArrayOutputStream")
 
@@ -540,13 +540,13 @@ module Xdrgen
         if union.discriminant.type.is_a?(AST::Typespecs::Int)
           out.puts "stream.writeInt(encoded#{name union}.getDiscriminant().intValue());"
         elsif type_string(union.discriminant.type) == "Uint32"
-          # ugly workaround for compile error after generating source for AuthenticatedMessage in stellar-core
+          # ugly workaround for compile error after generating source for AuthenticatedMessage in diamnet-core
           out.puts "stream.writeInt(encoded#{name union}.getDiscriminant().getUint32().getNumber().intValue());"
         else
           out.puts "stream.writeInt(encoded#{name union}.getDiscriminant().getValue());"
         end
         if type_string(union.discriminant.type) == "Uint32"
-          # ugly workaround for compile error after generating source for AuthenticatedMessage in stellar-core
+          # ugly workaround for compile error after generating source for AuthenticatedMessage in diamnet-core
           out.puts "switch (encoded#{name union}.getDiscriminant().getUint32().getNumber().intValue()) {"
         else
           out.puts "switch (encoded#{name union}.getDiscriminant()) {"
@@ -589,7 +589,7 @@ module Xdrgen
         out.puts "decoded#{name union}.setDiscriminant(discriminant);"
 
         if type_string(union.discriminant.type) == "Uint32"
-          # ugly workaround for compile error after generating source for AuthenticatedMessage in stellar-core
+          # ugly workaround for compile error after generating source for AuthenticatedMessage in diamnet-core
           out.puts "switch (decoded#{name union}.getDiscriminant().getUint32().getNumber().intValue()) {"
         else
           out.puts "switch (decoded#{name union}.getDiscriminant()) {"

@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InvalidClassException;
 import java.nio.charset.Charset;
 import java.util.Arrays;
-import org.stellar.sdk.Base64Factory;
+import org.diamnet.sdk.Base64Factory;
 
 public class XdrString implements XdrElement {
     private byte[] bytes;

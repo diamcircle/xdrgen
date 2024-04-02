@@ -6,7 +6,7 @@ enum AccountFlags
 
 /* AccountEntry
 
-    Main entry representing a user in Stellar. All transactions are performed
+    Main entry representing a user in Diamnet. All transactions are performed
     using an account.
 
     Other ledger entries created require an account.

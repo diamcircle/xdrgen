@@ -1,10 +1,10 @@
-package org.stellar.sdk.xdr;
+package org.diamnet.sdk.xdr;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.Objects;
-import org.stellar.sdk.Base64Factory;
+import org.diamnet.sdk.Base64Factory;
 
 /**
  * Represents XDR Unsigned Integer.
